@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --Cream: hsl(30, 38%, 92%);
+    --Dark_cyan: hsl(158, 36%, 37%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Cream);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark_grayish_blue);
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    background-color: var(--White);
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    width: 50%;
+}
+
+.logo-perfume {
+    height: 100%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.body {
+    width: 50%;
+}
+
+.nombre {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.marca {
+    width: 80%;
+    font-size: 1.9rem;
+    line-height: 1;
+    color: var(--Very_dark_blue);
+}
+
+.body .container__card {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.descripcion {
+    font-size: .9rem;
+    line-height: 1.7;
+    font-weight: 500;    
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 10px 0;
+}
+
+.precio1 {
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    color: var(--Dark_cyan);
+    padding-right: 1rem;
+}
+
+.precio2 {
+    text-decoration: line-through;
+    color: var(--Dark_grayish_blue);
+    font-size: .9rem;
+}
+
+.btn {
+    cursor: pointer;
+    background: var(--Dark_cyan);
+    color: var(--White);
+    width: 100%;
+    height: 7vh;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 80%;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    .logo-perfume {
+        height: 40vh;
+        background-image: url(images/image-product-mobile.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .marca {
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .descripcion {
+        font-size: .87rem;
+    }
+
+    .precio1 {
+        font-size: 1.9rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
