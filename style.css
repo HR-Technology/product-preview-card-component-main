@@ -33,7 +33,7 @@ body {
 .card {
     display: flex;
     width: 600px;
-    height: 380px;
+    height: 450px;
     background-color: var(--White);
     margin: 0 auto;
     border-radius: 10px;
